@@ -14,7 +14,7 @@
         <div id="nav">
             
         </div>
-        <div id="FirstSpace">
+        <div id="firstspace">
             <h1 id="title" class="title">Sw3Dreams (are made of this)</h1>
             <p>Some random generic text which should either make people buy this shit or tell something about the company. idk really</p>
             <p>test</p>
