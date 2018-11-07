@@ -1,6 +1,7 @@
 body {
     background-image: url("https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb095116a8cfd26cec5c171f8438a213&w=1000&q=80");
     background-repeat: no-repeat;
+    max-width: 100%;
 }
 .title {
     font-family: 'Lobster', cursive;
@@ -9,10 +10,8 @@ body {
 
 #body {
     font-family: 'Inconsolata', monospace;
-    margin: 1.3em auto;
-    max-width: 95%;    
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
 }
