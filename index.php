@@ -9,12 +9,12 @@
     </head>
     <body>
         <div id="header">
-            
+            <a class="headerlink" href="/about.php">&Uuml;ber uns</a><a class="headerlink" href="/product.php">Produkt</a><p id="name">Sw3Dreams</p>
         </div>
         <div id="nav">
             
         </div>
-        <div id="firstspace">
+        <div id="FirstSpace">
             <h1 id="title" class="title">Sw3Dreams (are made of this)</h1>
             <p>Some random generic text which should either make people buy this shit or tell something about the company. idk really</p>
             <p>test</p>
