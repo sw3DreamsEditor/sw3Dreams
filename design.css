@@ -5,7 +5,10 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 350%;
 }
-
+#Background {
+    position: fixed;
+    
+}
 #body {
     
     font-family: 'Inconsolata', monospace;
