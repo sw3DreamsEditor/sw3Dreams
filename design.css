@@ -5,15 +5,8 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 350%;
 }
-#Background {
-    position: fixed;
-    
-}
+
 #body {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     font-family: 'Inconsolata', monospace;
     
 }
