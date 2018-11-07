@@ -9,5 +9,10 @@ body {
 
 #body {
     font-family: 'Inconsolata', monospace;
+    margin: 1.3em auto;
+    max-width: 95%;    
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     
 }
