@@ -10,7 +10,8 @@ body {
     font-size: 350%;
 }
 
-#body {
+#FirstSpace {
+    background-color: aqua;
     font-family: 'Inconsolata', monospace;
     margin: 0 auto;
     max-width: 800px;
