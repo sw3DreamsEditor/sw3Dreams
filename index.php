@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="header">
-            <a class="headerlink" href="/about.php">&Uuml;ber uns</a><a class="headerlink" href="/product.php">Produkt</a><p id="name">Sw3Dreams</p>
+            <a class="headerlink" href="/about.php">&Uuml;ber uns</a><a class="headerlink" href="/product.php">Produkt</a><a class="headerlink" href="/index.php">Sw3Dreams</a>
         </div>
         <div id="nav">
             
