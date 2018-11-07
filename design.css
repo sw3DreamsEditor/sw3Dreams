@@ -11,10 +11,10 @@ body {
 }
 
 #FirstSpace {
-    background-color: aqua;
     font-family: 'Inconsolata', monospace;
     margin: 0 auto;
     max-width: 800px;
     padding: 2em 2em 4em;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    background-color: aqua;
 }
