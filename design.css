@@ -8,16 +8,29 @@ body {
 .title {
     font-family: 'Lobster', cursive;
     font-size: 350%;
-}
-
+    
 #firstspace {
-    border-radius: 100px 100%;
+    border-radius: 40px;
     font-family: 'Inconsolata', monospace;
     margin: 0 auto;
     max-width: 800px;
-    padding: 2em 2em 4em;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    background-color: aqua;
+    padding: 1em 15em 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+    background-color: white;
+}
+.second {
+    color: white;
+}
+
+#secondspace {
+    border-radius: 40px;
+    font-family: 'Inconsolata', monospace;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em 15em 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+    background-color: black;
+    
 }
 
 .headerlink {
