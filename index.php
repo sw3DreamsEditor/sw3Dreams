@@ -8,6 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
     <body>
+        <div id="Backgorund">
+            <img src="https://www.google.ch/search?q=wallpaper&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiT25q0-sHeAhXBEiwKHZdHB5oQ_AUIDigB&biw=1920&bih=823#imgrc=UWA8wjRJ03SLnM:">
+        </div>
         <div id="header">
             
         </div>
