@@ -11,6 +11,7 @@ body {
 }
 
 #firstspace {
+    border-radius: 10px 25%;
     font-family: 'Inconsolata', monospace;
     margin: 0 auto;
     max-width: 800px;
