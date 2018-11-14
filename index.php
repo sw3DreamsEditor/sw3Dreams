@@ -16,12 +16,12 @@
         <div id="nav">
             
         </div>
-        <div id="FirstSpace">
+        <div class="A">
             <h1 id="title" class="title">Sw3Dreams (are made of this)</h1>
             <p>Some random generic text which should either make people buy this shit or tell something about the company. idk really</p>
             <p>test</p>
             </div>
-        <div id="secondspace">
+        <div class="B">
             <h1 class="second">Sw3Dreams (are made of this)</h1>
             <p class="second">Some random generic text which should either make people buy this shit or tell something about the company. idk really</p>
             <p class="second">test</p>
