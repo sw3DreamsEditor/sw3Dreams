@@ -4,6 +4,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background: cover;
+	position: static;
+	width: 1390px;
 }
 .title {
     font-family: 'Lobster', cursive;
