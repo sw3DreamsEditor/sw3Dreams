@@ -10,7 +10,7 @@ body {
     font-size: 350%;
 }
 
-#firstspace {
+.A {
     border-radius: 40px;
     font-family: 'Inconsolata', monospace;
     margin: 0 auto;
@@ -23,7 +23,7 @@ body {
     color: white;
 }
 
-#secondspace {
+.B {
     font-family: 'Inconsolata', monospace;
     margin-top: 20px;
 	Background-color: black;
