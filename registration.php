@@ -1,9 +1,9 @@
 <?php
-$username=$_POST['username']
-$firstname=$_POST['firstname']
-$lastname=$_POST['lastname']
-$pw=$_POST['password']
-$cpw=$_POST['confirmpw']
+$username=$_POST['username'];
+$firstname=$_POST['firstname'];
+$lastname=$_POST['lastname'];
+$pw=$_POST['password'];
+$cpw=$_POST['confirmpw'];
 
 // if username !exist && pw=cpw create user
 // else abort
