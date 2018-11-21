@@ -4,12 +4,12 @@
         <title>Sw3Dreams</title>
         <meta charset="utf-8" />
         <meta lang="de" />
-        <link href="css/design.css" rel="stylesheet" />
+        <link href="/design.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
 <body>
     <div id="testheader">
-                    <a class="headerlink" href="index.html">Home</a>
+                    <a class="headerlink" href="index.php">Home</a>
 
         </div>
     <div id="Formular">
