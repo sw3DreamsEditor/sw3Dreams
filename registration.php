@@ -13,7 +13,7 @@ if (($existing!=$username) && ($pw==$cpw)) {
     $pwhash = password_hash($pw, PASSWORD_DEFAULT);
     $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
 } else {
-    $userexists=true;
+    $GLOBALS['userexist']=true;
 }
 ?>
 
@@ -27,7 +27,7 @@ if (($existing!=$username) && ($pw==$cpw)) {
     </head>
     <body>
         <?php
-        if ($userexists) {
+        if ($GLOBALS['userexists']) {
             echo "        <p>Der gew&auml;hlte Benutzername existiert bereits. Bitte w&auml;hle einen anderen.</p>";
         }
         ?>
