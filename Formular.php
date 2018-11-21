@@ -13,8 +13,11 @@
 
         </div>
     <div id="Formular">
-            <input id="FormularName" name="FormularName" placeholder="Name">
-            <input id="FormularPreis" name="FormularPreis" placeholder="Preis">
+            <input id="FormularName" name="FormularName" placeholder="Name"/>
+            <input id="FormularPreis" name="FormularPreis" placeholder="Preis"/>
+            <textarea id="FormularBeschrieb" name="FormularBeschrieb" placeholder="Beschreiben Sie das Produkt"></textarea>
+            <input name="FormularDatei" type="file" accept="image/jpeg">
+            <button type="submit" form="form1" value="Submit">Submit</button>
         </div>
     </body>
 </html>
