@@ -13,7 +13,7 @@
 
         </div>
       <div id="Formular">
-        <form id="Form">
+        <form id="Form"method="post">
             <input id="FormularName" name="FormularName" placeholder="Name"/>
             <input id="FormularPreis" name="FormularPreis" placeholder="Preis"/>
             <textarea id="FormularBeschrieb" name="FormularBeschrieb" placeholder="Beschreiben Sie das Produkt"></textarea>
