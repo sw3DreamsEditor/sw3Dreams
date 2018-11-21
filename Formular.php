@@ -12,12 +12,14 @@
                     <a class="headerlink" href="index.php">Home</a>
 
         </div>
-    <div id="Formular">
+      <div id="Formular">
+        <form id="Form">
             <input id="FormularName" name="FormularName" placeholder="Name"/>
             <input id="FormularPreis" name="FormularPreis" placeholder="Preis"/>
             <textarea id="FormularBeschrieb" name="FormularBeschrieb" placeholder="Beschreiben Sie das Produkt"></textarea>
             <input name="FormularDatei" type="file" accept="image/jpeg">
-            <button type="submit" form="form1" value="Submit">Submit</button>
-        </div>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+      </div>
     </body>
 </html>
