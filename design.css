@@ -6,6 +6,7 @@ body {
     background: cover;
 	position: static;
 	width: 1390px;
+	margin: auto;
 }
 .title {
     font-family: 'Lobster', cursive;
