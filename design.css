@@ -49,6 +49,11 @@ body {
     margin-top: 1px;
         background-color: white;
 }
+
+#header2 {
+        margin-left: 550px;
+}
+
 .headerlink {
     text-decoration: none;
     color: #000000;
