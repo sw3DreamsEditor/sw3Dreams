@@ -30,7 +30,7 @@ $cpw=$_POST['confirmpw']
                 <input name="lastname" type="text" placeholder="lastname" />
                 <input name="password" type="password" placeholder="password" />
                 <input name="confirmpw" type="password" placeholder="confirm password" />
-                <button type="submit" value="Registrieren" />
+                <button type="submit" value="Registrieren">Registrieren</button>
             </form>
         </div>
         <div id="footer">
