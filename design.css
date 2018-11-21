@@ -44,9 +44,16 @@ body {
 	box-shadow: white;
     
 }
-
+#header {
+    font-size: 15;
+    margin-top: 1px;
+        background-color: white;
+}
 .headerlink {
+    text-decoration: none;
     color: #000000;
+	margin-left: 0.5px;
+    padding: 10px 10px 10px;
 }
 
 #name {
