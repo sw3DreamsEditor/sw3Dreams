@@ -26,7 +26,7 @@ if (($existing!=$username) && ($pw==$cpw)) {
     <body>
         <?php
         if ($userexists) {
-            echo "        <p>Der gew&auml;hlte Benutzername existiert bereits. Bitte w&auml;hle einen anderen.</p>"
+            echo "        <p>Der gew&auml;hlte Benutzername existiert bereits. Bitte w&auml;hle einen anderen.</p>";
         }
         ?>
         <form method="post">
