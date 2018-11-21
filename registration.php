@@ -9,6 +9,7 @@ $cpw=$_POST['confirmpw'];
 
 $existing = $mysqli->query("select $username from user");
 if (($existing!=$username) && ($pw==$cpw)) {
+    echo "YEEEEEEEEET";
     $pwhash = password_hash($pw, PASSWORD_DEFAULT);
     $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
 } else {
