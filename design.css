@@ -14,8 +14,9 @@ body {
 }
 
 .A {
+	color: white;
 	font-family: 'Inconsolata', monospace;
-	background-color: white;
+	background-color: black;
 	text-align: center;
 	padding: 1em 5em 5em;
 	box-sizing: border-box;
