@@ -37,13 +37,13 @@
             }
             $mysqli->query("insert into product (productname, price, desc, picpath) values ($_POST['productname'], $_POST['price'], $_POST['desc'], $picdir)");
         
-            echo "            <form id="Form" enctype="multipart/form-data" method="post">";
-            echo "            <input id="FormularName" name="productname" placeholder="Name" />";
-            echo "            <input id="FormularPreis" name="price" placeholder="Preis" />";
-            echo "            <textarea id="FormularBeschrieb" name="desc" placeholder="Beschreiben Sie das Produkt"></textarea>";
-            echo "            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />";
-            echo "            <input name="picture" type="file" accept="image/jpeg" />";
-            echo "            <button type="submit" value="Submit">Submit</button>";
+            echo '            <form id="Form" enctype="multipart/form-data" method="post">';
+            echo '            <input id="FormularName" name="productname" placeholder="Name" />';
+            echo '            <input id="FormularPreis" name="price" placeholder="Preis" />';
+            echo '            <textarea id="FormularBeschrieb" name="desc" placeholder="Beschreiben Sie das Produkt"></textarea>';
+            echo '            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />';
+            echo '            <input name="picture" type="file" accept="image/jpeg" />';
+            echo '            <button type="submit" value="Submit">Submit</button>';
         ?>
         </form>
       </div>
