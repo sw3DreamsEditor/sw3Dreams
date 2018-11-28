@@ -13,7 +13,7 @@ $out = $mysqli->query("SELECT * FROM user");
 if ($out->num_rows > 0) {
     // output data of each row
     while($row = $out->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+        echo "firstname: " . $row["firstname"]. " - lastname: " . $row["lastname"]. " - username: " . $row["username"]. "<br>";
     }
 } else {
     echo "0 results";
