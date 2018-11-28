@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "sw3dreams";
+$username = "root";
 $password = "sml12345";
 $dbname = "sw3dreams";
 $mysqli = new mysqli($servername, $username, $password, $dbname);
