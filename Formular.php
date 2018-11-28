@@ -44,6 +44,7 @@
             echo "            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />";
             echo "            <input name="picture" type="file" accept="image/jpeg" />";
             echo "            <button type="submit" value="Submit">Submit</button>";
+        >
         </form>
       </div>
     </body>
