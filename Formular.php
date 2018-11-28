@@ -14,7 +14,7 @@
     <div id="Formular">
         <?php
             $servername = "localhost";
-            $username = "sw3dreams";
+            $username = "root";
             $password = "sml12345";
             $dbname = "sw3dreams";
 
@@ -22,12 +22,12 @@
 
             $uploads_dir = '/var7www/sw3dreams/pruducts/pictures';
             $picdir = '';
-            foreach ($_FILES["pictures"]["error"] as $key => $error) {
+            foreach ($_FILES["picture"]["error"] as $key => $error) {
                 if ($error == UPLOAD_ERR_OK) {
-                    $tmp_name = $_FILES["pictures"]["tmp_name"][$key];
+                    $tmp_name = $_FILES["picture"]["tmp_name"][$key];
                     // basename() may prevent filesystem traversal attacks;
                     // further validation/sanitation of the filename may be appropriate
-                    $name = basename($_FILES["pictures"]["name"][$key]);
+                    $name = basename($_FILES["picture"]["name"][$key]);
                     $picdir = "$uploads_dir/$name";
                     move_uploaded_file($tmp_name, "$picdir");
                 } else {
@@ -36,8 +36,8 @@
                 }
             }
             $mysqli->query("insert into product (productname, price, description, picpath) values ($_POST[productname], $_POST[price], $_POST[desc], $picdir)");
-        
-            echo '            <form id="Form" enctype="multipart/form-data" method="post">';
+            echo "$_POST[productname], $_POST[price], $_POST[description], $picdir";
+            echo '        <form enctype="multipart/form-data" method="post">';
             echo '            <input id="FormularName" name="productname" placeholder="Name" />';
             echo '            <input id="FormularPreis" name="price" placeholder="Preis" />';
             echo '            <textarea id="FormularBeschrieb" name="desc" placeholder="Beschreiben Sie das Produkt"></textarea>';
