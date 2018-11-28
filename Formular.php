@@ -27,6 +27,7 @@
                     $tmp_name = $_FILES["picture"]["tmp_name"][$key];
                     // basename() may prevent filesystem traversal attacks;
                     // further validation/sanitation of the filename may be appropriate
+                    echo "this is the key btw: $key whatevertheeff";
                     $name = basename($_FILES["picture"]["name"][$key]);
                     $picdir = "$uploads_dir/$name";
                     move_uploaded_file($tmp_name, "$picdir");
@@ -40,7 +41,7 @@
             echo '        <form enctype="multipart/form-data" method="post">';
             echo '            <input id="FormularName" name="productname" placeholder="Name" />';
             echo '            <input id="FormularPreis" name="price" placeholder="Preis" />';
-            echo '            <textarea id="FormularBeschrieb" name="desc" placeholder="Beschreiben Sie das Produkt"></textarea>';
+            echo '            <textarea id="FormularBeschrieb" name="description" placeholder="Beschreiben Sie das Produkt"></textarea>';
             echo '            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />';
             echo '            <input name="picture" type="file" accept="image/jpeg" />';
             echo '            <button type="submit" value="Submit">Submit</button>';
