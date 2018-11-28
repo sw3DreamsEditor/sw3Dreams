@@ -35,7 +35,7 @@
                     echo "\n<p>aka you (client-side) fucked up</p>";
                 }
             }
-            $mysqli->query("insert into product (productname, price, desc, picpath) values ($_POST['productname'], $_POST['price'], $_POST['desc'], $picdir)");
+            $mysqli->query("insert into product (productname, price, desc, picpath) values ($_POST[productname], $_POST[price], $_POST[desc], $picdir)");
         
             echo '            <form id="Form" enctype="multipart/form-data" method="post">';
             echo '            <input id="FormularName" name="productname" placeholder="Name" />';
