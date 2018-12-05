@@ -57,6 +57,14 @@ if ($result = $mysqli->query($query)) {
             echo "        <p>Der gew&auml;hlte Benutzername existiert bereits. Bitte w&auml;hle einen anderen.</p>";
         }
         ?>
+                <div id="header">
+            <div id="header2">
+            <p>
+                <a class="headerlink" href="/about.php">&Uuml;ber uns</a><tab />|<tab /><a class="headerlink" href="/product.php">Produkt</a><tab />|<tab /><a class="headerlink" href="/index.php">Sw3Dreams</a><tab />|<tab />
+                <a class="headerlink" href="/Formular.php">LOL f&uuml;r Lars</a>
+            </p>
+            </div>
+        </div>
         <form method="post">
             <input name="username" type="text" placeholder="username" />
             <input name="firstname" type="text" placeholder="firstname" />
