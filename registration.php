@@ -22,7 +22,9 @@ $result = $mysqli->query($query);
 
 /* fetch object array */
 while ($obj = $result->fetch_object()) {
+    echo "inside of while loop";
     if (!(in_array($username, $obj->username)) && ($pw==$cpw)) {
+        echo "inside if";
         $insertstatement = "insert into customer (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pw)";
         $whaduhec = $mysqli->query($insertstatement);
         
