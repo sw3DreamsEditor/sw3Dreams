@@ -27,6 +27,7 @@ while ($obj = $result->fetch_object()) {
     if (!(in_array($username, $obj->username)) && ($pw==$cpw)) {
         echo "inside if";
         $insertstatement = "insert into customer (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pw)";
+        echo "$insertstatement";
         $whaduhec = $mysqli->query($insertstatement);
         
         if ($whaduhec) {
