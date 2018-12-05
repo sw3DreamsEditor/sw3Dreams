@@ -17,7 +17,7 @@
             </p>
             </div>
         </div>
-    <h1 id="Shoptitle">Willkommen in unserem Shop</h1>
+    <h1 id="shoptitle">Willkommen in unserem Shop</h1>
 
     <div class="Productdivs">
         <img class="ProductPics" src="https://i.ytimg.com/vi/0yZxkDm9wdE/hqdefault.jpg">
