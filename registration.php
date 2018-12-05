@@ -17,7 +17,7 @@ $lastname=$_POST['lastname'];
 $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
-$query = "select * from user";
+$query = "select * from customer";
 $result = $mysqli->query($query);
 
 /* fetch object array */
