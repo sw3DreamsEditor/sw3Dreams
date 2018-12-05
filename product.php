@@ -9,6 +9,14 @@
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   </head>
   <body>
+              <div id="header">
+            <div id="header2">
+            <p>
+                <a class="headerlink" href="/about.php">&Uuml;ber uns</a><tab />|<tab /><a class="headerlink" href="/product.php">Produkt</a><tab />|<tab /><a class="headerlink" href="/index.php">Sw3Dreams</a><tab />|<tab />
+                <a class="headerlink" href="/Formular.php">LOL f&uuml;r Lars</a>
+            </p>
+            </div>
+        </div>
     <h1 id="Shoptitle">Willkommen in unserem Shop</h1>
 
     <div class="Productdivs">
