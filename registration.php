@@ -25,8 +25,14 @@ if ($result = $mysqli->query($query)) {
         if (($username!=$obj->username) && ($pw==$cpw)) {
             echo "YEEEEEEEEET";
             $pwhash = password_hash($pw, PASSWORD_DEFAULT);
-            $whaduhec = $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
-            echo $whaduhec;
+            $insertstatement = "insert into user (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pwhash)";
+            $whaduhec = $mysqli->query($insertstatement);
+            
+            if ($whaduhec) {
+                echo "It's free real estate";
+            } else {
+                echo "It's free real estaten't";
+            }
         } else {
             $GLOBALS['userexist']=true;
         }
@@ -34,19 +40,6 @@ if ($result = $mysqli->query($query)) {
 
     /* free result set */
     $result->close();
-}
-
-if (($existing!=$username) && ($pw==$cpw)) {
-    echo "YEEEEEEEEET";
-    $pwhash = password_hash($pw, PASSWORD_DEFAULT);
-    $whaduhec = $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
-    if ($whaduhec) {
-        echo "It's free real estate";
-    } else {
-        echo "It's free real estaten't";
-    }
-} else {
-    $GLOBALS['userexist']=true;
 }
 ?>
 
