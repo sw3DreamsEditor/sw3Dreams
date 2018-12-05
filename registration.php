@@ -12,8 +12,10 @@ $lastname=$_POST['lastname'];
 $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
-$existing = $mysqli->query("select $username from user");
+$existing = $mysqli->query("select * from user");
 echo "$existing";
+
+$existing = $mysqli->query("select $username from user");
 
 if (($existing!=$username) && ($pw==$cpw)) {
     echo "YEEEEEEEEET";
