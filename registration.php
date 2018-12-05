@@ -31,7 +31,7 @@ while ($obj = $result->fetch_object()) {
         if ($whaduhec) {
             echo "It's free real estate";
         } else {
-            echo "It's free real estaten't";
+            echo "It's free real estaten\'t";
         }
     } else {
         $GLOBALS['userexist']=true;
