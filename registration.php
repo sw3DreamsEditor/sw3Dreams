@@ -6,16 +6,28 @@ $mysql_password = "sml12345";
 $mysql_dbname = "sw3dreams";
 $mysqli = new mysqli($mysql_servername, $mysql_username, $mysql_password, $mysql_dbname);
 
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
+
 $username=$_POST['username'];
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
 $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
-$anotherone = $mysqli->query("select * from user");
-echo "$anotherone";
+$query = "select * from user";
+if ($result = $mysqli->query($query)) {
 
-$existing = $mysqli->query("select $username from user");
+    /* fetch object array */
+    while ($obj = $result->fetch_object()) {
+        printf ("%s (%s)\n", $obj->username, $obj->password);
+    }
+
+    /* free result set */
+    $result->close();
+}
 
 if (($existing!=$username) && ($pw==$cpw)) {
     echo "YEEEEEEEEET";
