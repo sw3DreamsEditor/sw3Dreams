@@ -77,3 +77,29 @@ body {
 #testheader{
         background-color: white;
 }
+p {
+    color:white;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.ProductPics {
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    height: 150px
+}
+
+
+.Productdivs {
+    float: left;
+    margin-left: 100px;
+    
+}
+
+#Shoptitle {
+    font-family: 'Lobster', cursive;
+    font-size: 350%;
+    margin-left: 250px;
+    color: azure;
+}
