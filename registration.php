@@ -17,12 +17,12 @@ $lastname=$_POST['lastname'];
 $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
-$query = "select $username from user";
+$query = "select * from user";
 $result = $mysqli->query($query);
 
 /* fetch object array */
 while ($obj = $result->fetch_object()) {
-    if (($username!=$obj->username) && ($pw==$cpw)) {
+    if (!(in_array($username, $obj->username) && ($pw==$cpw)) {
         echo "YEEEEEEEEET";
         $pwhash = password_hash($pw, PASSWORD_DEFAULT);
         $insertstatement = "insert into user (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pwhash)";
