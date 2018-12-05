@@ -21,11 +21,9 @@ $query = "select * from customer";
 $result = $mysqli->query($query);
 
 /* fetch object array */
-echo "if this is there then fck you";
 while ($obj = $result->fetch_object()) {
-    echo "inside of while loop";
     if (!(in_array($username, $obj->username)) && ($pw==$cpw)) {
-        echo "inside if";
+        echo $obj->username
         $insertstatement = "insert into customer (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pw)";
         echo "$insertstatement";
         $whaduhec = $mysqli->query($insertstatement);
