@@ -1,5 +1,11 @@
 <?php
-include 'db.php';
+
+$mysql_servername = "localhost";
+$mysql_username = "root";
+$mysql_password = "sml12345";
+$mysql_dbname = "sw3dreams";
+$mysqli = new mysqli($mysql_servername, $mysql_username, $mysql_password, $mysql_dbname);
+
 $username=$_POST['username'];
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
@@ -7,6 +13,7 @@ $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
 
+echo "";
 $existing = $mysqli->query("select $username from user");
 if (($existing!=$username) && ($pw==$cpw)) {
     echo "YEEEEEEEEET";
