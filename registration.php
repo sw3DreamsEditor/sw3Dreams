@@ -25,12 +25,13 @@ while ($obj = $result->fetch_object()) {
     if (!(in_array($username, $obj->username)) && ($pw==$cpw)) {
         $pwhash = password_hash($pw, PASSWORD_DEFAULT);
         $insertstatement = "insert into user (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pwhash)";
+        echo "$insertstatement";
         $whaduhec = $mysqli->query($insertstatement);
         
         if ($whaduhec) {
             echo "It's free real estate";
         } else {
-            echo "It's free real estaten\'t";
+            echo "It's free real estaten't";
         }
     } else {
         $GLOBALS['userexist']=true;
