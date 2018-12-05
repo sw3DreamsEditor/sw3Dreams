@@ -17,12 +17,19 @@ $lastname=$_POST['lastname'];
 $pw=$_POST['password'];
 $cpw=$_POST['confirmpw'];
 
-$query = "select * from user";
+$query = "select $username from user";
 if ($result = $mysqli->query($query)) {
 
     /* fetch object array */
     while ($obj = $result->fetch_object()) {
-        printf ("%s (%s)\n", $obj->username, $obj->password);
+        if (($username!=$obj->username) && ($pw==$cpw)) {
+            echo "YEEEEEEEEET";
+            $pwhash = password_hash($pw, PASSWORD_DEFAULT);
+            $whaduhec = $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
+            echo $whaduhec;
+        } else {
+            $GLOBALS['userexist']=true;
+        }
     }
 
     /* free result set */
@@ -33,7 +40,11 @@ if (($existing!=$username) && ($pw==$cpw)) {
     echo "YEEEEEEEEET";
     $pwhash = password_hash($pw, PASSWORD_DEFAULT);
     $whaduhec = $mysqli->query("insert into user (username, firstname, lastname, password) values ($username, $firstname, $lastname, $pwhash)");
-    echo $whaduhec;
+    if ($whaduhec) {
+        echo "It's free real estate";
+    } else {
+        echo "It's free real estaten't";
+    }
 } else {
     $GLOBALS['userexist']=true;
 }
