@@ -25,7 +25,7 @@ while ($obj = $result->fetch_object()) {
     if (!(in_array($username, $obj->username)) && ($pw==$cpw)) {
         $pwhash = password_hash($pw, PASSWORD_DEFAULT);
         $insertstatement = "insert into user (username, firstname, lastname, pwd) values ($username, $firstname, $lastname, $pwhash)";
-        replace('$', '\$', $insertstatement);
+        str_replace('$', '\$', $insertstatement);
         echo "$insertstatement";
         $whaduhec = $mysqli->query($insertstatement);
         
